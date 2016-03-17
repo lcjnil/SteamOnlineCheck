@@ -1,0 +1,23 @@
+{
+    "name": "__MSG_appName__",
+    "version": "0.0.4",
+    "manifest_version": 2,
+    "description": "__MSG_appDescription__",
+    "background": {
+        "scripts": [
+            "./node_modules/socket.io-client/socket.io.js",
+            "./background.js"
+        ]
+    },
+    "browser_action": {
+        "default_title": "Antenna",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage",
+        "notifications",
+        "http://*/",
+        "tabs"
+    ],
+    "content_security_policy": "script-src 'self' https://example.com; object-src 'self'"
+}
